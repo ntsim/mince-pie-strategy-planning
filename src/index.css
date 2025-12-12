@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "@fontsource/mountains-of-christmas/700.css";
+@import "@fontsource/crimson-text/400.css";
+@import "@fontsource/crimson-text/700.css";
+
+@theme {
+  --color-christmas-red: #c41e3a;
+  --color-christmas-green: #165b33;
+  --color-christmas-green-light: #b8e6c9;
+  --color-christmas-gold: #ffd700;
+  --color-christmas-gold-light: #fff4b8;
+  --color-snow-white: #fffafa;
+  --color-winter-blue: #4a7c9c;
+  --color-winter-blue-light: #b8d9e8;
+
+  --font-heading: "Mountains of Christmas", cursive;
+  --font-body: "Crimson Text", Georgia, serif;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-winter-blue),
+    #e0f2fe,
+    var(--color-snow-white)
+  );
+  font-family: var(--font-body);
+}
+
+/* Apply festive font to all headings and large text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-heading {
+  font-family: var(--font-heading);
+}
